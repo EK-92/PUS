@@ -1,0 +1,28 @@
+[project]
+name = "pus"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "EK", email = "krakhalev.efim@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=8.3.4",
+]
+
+[project.scripts]
+pus = "pus:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "mypy>=1.15.0",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.9",
+]
