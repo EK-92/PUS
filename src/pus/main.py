@@ -14,6 +14,7 @@ def hash():
         for _ in range(5)
     )
     return result
+
 def print_links():
     query = 'SELECT HASH, URL FROM links;'
     cursor.execute(query)
